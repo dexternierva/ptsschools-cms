@@ -1,3 +1,3 @@
-# Strapi application
+# PTS Schools Content Management System
 
-A quick description of your strapi application
+
