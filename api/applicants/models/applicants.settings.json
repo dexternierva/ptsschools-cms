@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "applicants",
+  "info": {
+    "name": "Student_Inquiries",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "survey": {
+      "type": "enumeration",
+      "enum": [
+        "facebook",
+        "friends",
+        "newspaper",
+        "radio",
+        "tv",
+        "walkin",
+        "website",
+        "workabroad"
+      ]
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "middle_name": {
+      "type": "string"
+    },
+    "working_abroad": {
+      "type": "boolean"
+    },
+    "job_applying_for": {
+      "type": "enumeration",
+      "enum": [
+        "nurse_for_germany",
+        "caregiver_for_canada",
+        "other_professions"
+      ]
+    },
+    "purpose": {
+      "type": "enumeration",
+      "enum": [
+        "german_language_scholarship",
+        "german_nursing_licensure",
+        "scholarship"
+      ]
+    },
+    "address": {
+      "type": "string"
+    },
+    "location_training": {
+      "type": "enumeration",
+      "enum": [
+        "baguio",
+        "cebu",
+        "iloilo",
+        "ortigas",
+        "quezon_city"
+      ]
+    },
+    "prc_license_number": {
+      "type": "string"
+    },
+    "date_of_birth": {
+      "type": "date"
+    },
+    "fb_messenger_name": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "integer"
+    },
+    "email_address": {
+      "type": "email"
+    }
+  }
+}

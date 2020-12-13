@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "company_inquiries",
+  "info": {
+    "name": "company_Inquiries",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "enumeration",
+      "enum": [
+        "mr",
+        "ms"
+      ]
+    },
+    "complete_name": {
+      "type": "string"
+    },
+    "company_name": {
+      "type": "string"
+    },
+    "company_address": {
+      "type": "string"
+    },
+    "email_address": {
+      "type": "email"
+    },
+    "contact_number": {
+      "type": "integer"
+    },
+    "categories_of_needed_workers": {
+      "type": "string"
+    },
+    "number_of_workers_needed": {
+      "type": "integer"
+    },
+    "country": {
+      "type": "enumeration",
+      "enum": [
+        "Germany",
+        "Canada",
+        "Taiwan",
+        "USA"
+      ],
+      "default": "Germany"
+    },
+    "inquiry": {
+      "type": "richtext"
+    }
+  }
+}

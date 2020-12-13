@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "applicant_inquiries",
+  "info": {
+    "name": "Applicant_Inquiries"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "survey": {
+      "type": "enumeration",
+      "enum": [
+        "facebook",
+        "friends",
+        "newspaper",
+        "radio",
+        "tv",
+        "walk_in",
+        "website",
+        "work_abroad"
+      ],
+      "default": "facebook",
+      "required": false
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "middle_name": {
+      "type": "string"
+    },
+    "date_of_birth": {
+      "type": "date"
+    },
+    "fb_messenger_name": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "integer"
+    },
+    "email_address": {
+      "type": "email"
+    },
+    "working_abroad": {
+      "type": "boolean"
+    },
+    "job_applying_for": {
+      "type": "enumeration",
+      "enum": [
+        "nurse_for_germany",
+        "caregiver_for_canada",
+        "other_professions"
+      ],
+      "default": "nurse_for_germany"
+    },
+    "purpose_of_registration": {
+      "type": "enumeration",
+      "enum": [
+        "german_language_teacher",
+        "other_profession"
+      ]
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}
